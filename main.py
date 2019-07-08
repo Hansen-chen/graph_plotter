@@ -3,11 +3,14 @@ import plotly.graph_objs as go
 import pandas as pd
 from datetime import datetime
 
+#API control
 #py.tools.set_credentials_file(username='hansenchan', api_key='pLrGADI5iTzoCQOpZFRp')
 
-
+#Possible GUI
 #top = tk.Tk()
 #top.mainloop()
+
+#Data feed needed
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
 
 trace = go.Candlestick(x=df['Date'],
